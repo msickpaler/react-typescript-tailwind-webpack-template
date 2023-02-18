@@ -26,4 +26,4 @@ this is react template.
    ```sh
    npm start
    ```
-4. find all `react-typescript-tailwind-webpack-template` and replace
+4. find all `react-typescript-tailwind-webpack-template` and replace with any name you like.

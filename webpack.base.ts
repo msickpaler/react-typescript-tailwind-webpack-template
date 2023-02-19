@@ -19,6 +19,9 @@ const config: Configuration = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
+  cache: {
+    type: "filesystem",
+  },
 };
 
 export default config;

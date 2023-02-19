@@ -16,9 +16,6 @@ interface Configuration extends WebpackConfiguration {
 
 const config: Configuration = merge(base, {
   mode: "development",
-  output: {
-    publicPath: "/",
-  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "public/index.html",
@@ -33,7 +30,7 @@ const config: Configuration = merge(base, {
   ],
   devtool: "inline-source-map",
   devServer: {
-    static: path.join(__dirname, "build"),
+    static: path.join(__dirname, "public"),
     historyApiFallback: true,
     port: 3000,
     open: true,
